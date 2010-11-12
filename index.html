@@ -1,0 +1,237 @@
+
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #eee;
+        font-family: "Baskerville";
+        font-size: 62.5%;
+        font-size: 1em;
+      }
+
+      h1,h2,h3 {
+        font-family: "Futura";
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-bottom: 0;
+        line-height: 1em;
+      }
+      header p, footer p, .location {
+        font-family: "Futura";
+        font-size: 0.8em;
+      }
+
+      header, footer {
+        text-align: center;
+      }
+      header h1 {
+        margin-bottom: 0;
+        font-size: 2.2em;
+      }
+      header p, footer p {
+        margin-top: 0.25em;
+        font-size: 0.7em;
+      }
+
+      #content {
+        background-color: #fff;
+        margin: 1em auto;
+        padding: 0 1.5em;
+        border: 1px solid #bbb;
+
+        width: 850px;
+      }
+
+      p, ul {
+        font-size: 0.8em;
+      }
+
+      section {
+        line-height: 1.25em;
+      }
+
+      #interests ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      #interests li:before {
+      }
+      #interests li {
+        width: 25%;
+        float: left;
+      }
+
+      br {
+        clear: both;
+      }
+
+      h2 {
+        display: inline;
+        font-size: 1.3em;
+      }
+      h3 {
+        font-weight: normal;
+        font-size: 0.9em;
+        color: #444;
+        background-color: #eee;
+        padding: 0.5em 1em;
+        margin-bottom: 1em;
+      }
+
+      .time, h4 {
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        line-height: 1em;
+        font-weight: normal;
+        margin-top: 0.75em;
+        margin-bottom: 0;
+      }
+      .time span, h4 {
+        text-transform: uppercase;
+      }
+
+      section#experience p {
+        font-size: 0.75em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+
+        color: #666;
+      }
+      section#experience ul {
+        margin-top: 0;
+        margin-bottom: 2em;
+      }
+
+      .location:before { content: "in "; }
+      .location:after  { content: ""; }
+      .location {
+        color: #444;
+        padding-left: 0.25em;
+      }
+
+      .time {
+        float: right;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <h1>Justin Camerer</h1>
+        <p>618.401.8890 &bull; iamjwc@gmail.com &bull; <a href="http://github.com/iamjwc">github.com/iamjwc</a></p>
+      </header>
+
+      <section id="interests">
+        <h3>Interests</h3>
+        <ul>
+          <li>Javascript</li>
+          <li>Ruby (off of and on Rails)</li>
+          <li>Scala</li>
+          <li>Vim</li>
+          <li>Haskell</li>
+          <li>HTML5</li>
+          <li>Node.js</li>
+          <li>Cocoa</li>
+          <li>Webkit</li>
+          <li>Git</li>
+        </ul>
+        <br/>
+      </section>
+
+      <section id="experience">
+        <h3>Work Experience</h3>
+
+        <h2>Limewire</h2>
+        <span class="location">New York, NY</span>
+        <span class="time"><span>August 2008</span> to <span>Present</span></span>
+        <br/>
+
+        <h4>Developer for Grapevine</h4>
+        <p>Grapevine is a cloud based music service with desktop and mobile clients.</p>
+        <ul>
+          <li>Built initial version of desktop application front-end in a Webkit shell</li>
+          <li>Helped design and implement REST API for Grapevine's web presence</li>
+          <li>Started development of iPhone application with two other developers</li>
+          <li>Built web based pages for the music store side of Grapevine</li>
+        </ul>
+
+        <h4>Prototype Developer for LimeWire</h4>
+        <p>
+          High fidelity prototypes were created in the web browser to emulate the LimeWire application.<br/>
+          User testing helped perfect features before their final development in Java.
+        </p>
+        <ul>
+          <li>Worked with one other developer to recreate LimeWire and build framework for adding features</li>
+          <li>Iterated prototype quickly to allow for changes to the app before and during testing</li>
+          <li>Implemented a prototype REST API in LimeWire that allowed for remote control of application</li>
+          <li>Built prototype mobile/web application to allow searching, downloading and streaming of content on the Gnutella network</li>
+        </ul>
+
+        <h4>Developer for LimeCast.com</h4>
+        <p>
+          LimeCast.com was an open podcast directory and archive with the goal of using p2p technology to reduce distribution costs.<br/>
+          Source code available at <a href="http://github.com/mnutt/limecast">github.com/mnutt/limecast</a>.
+        </p>
+        <ul>
+          <li>Built Ruby on Rails site from ground up with a team of two other developers</li>
+          <li>Launched companion site for combining multiple formats of the same media rss feed</li>
+        </ul>
+
+        <h2>WebSanity</h2>
+        <span class="location">Saint Louis, MO</span>
+        <span class="time"><span>March 2008</span> to <span>Present</span></span>
+        <br/>
+
+        <h4>Lead Developer of FormSanity.com</h4>
+        <p>FormSanity.com is an application that aids in the creation, processing and reporting of embeddable web based forms.</p>
+        <ul>
+          <li>Planned and created processing engine using Sinatra and MongoDB</li>
+          <li>Built front end of site using Rails to manage forms</li>
+          <li>Created a predicate language and implemented a server side version using TreeTop</li>
+          <li>Created and implemented a templating language using TreeTop</li>
+          <li>Ported site to Rails 3</li>
+        </ul>
+
+        <h2>Rapleaf</h2>
+        <span class="location">San Francisco, CA</span>
+        <span class="time"><span>May 2007</span> to <span>February 2008</span></span>
+        <br/>
+
+        <h4>Software Engineer Intern</h4>
+        <p></p>
+        <ul>
+          <li>Wrote Ruby code that touched nearly every aspect of the Rapleaf front end website and entire back end architecture</li>
+          <li>Designed and implemented credential framework</li>
+          <li>Extended company intranet by adding advanced log visualization tools</li>
+          <li>Refactored old code to be more modular and reusable</li>
+          <li>Wrote extensive unit and integration tests to ensure that the system is in proper working order</li>
+          <li>Worked on engines to crawl the web for the Rapleaf.com and Upscoop.com sites</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Education</h3>
+
+        <h2>Southern Illinois University Edwardsville</h2>
+        <span class="location">Edwardsville, IL</span>
+        <span class="time"><span>August 2004</span> to <span>August 2008</span></span>
+        <br/>
+
+        <h4>Computer Science Student</h4>
+        <p>
+          Recieved Bachelor of Science degree in Computer Science with a minor in Mathematics.
+        </p>
+        <ul>
+          <li>Implemented at least one hundred different sorting algorithms</li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p>618.401.8890 &bull; iamjwc@gmail.com &bull; <a href="http://github.com/iamjwc">github.com/iamjwc</a></p>
+    </footer>
+  </body>
+</html>
+
