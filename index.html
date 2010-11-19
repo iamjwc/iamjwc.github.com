@@ -4,6 +4,28 @@
     <link rel="stylesheet" type="text/css" href="screen.css" media="all" />
     <link rel="stylesheet" type="text/css" href="print.css" media="print" />
     <title>Justin Camerer</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      var onePixelSquareOfColor = function(color) {
+        var canvas = $('<canvas height="1" width="1"></canvas>');
+        var ctx = canvas[0].getContext("2d");
+        ctx.fillStyle = color;
+        ctx.fillRect(0,0,1,1);
+
+        return canvas[0].toDataURL();
+      }
+
+      $(function() {
+        var color = $('h3').css('background-color');
+        $('h3').each(function() {
+          var img  = $("<img/>").attr('src', onePixelSquareOfColor(color));
+          var span = $("<span></span>").text($(this).text());
+          $(this).append(img);
+          $(this).append(span);
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="content">

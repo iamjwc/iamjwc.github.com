@@ -81,6 +81,21 @@ h3 {
   background-color: #eee;
   padding: 0.5em 1em;
   margin-bottom: 1em;
+  position:relative;
+}
+h3 img {
+  bottom: 0px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+}
+h3 span {
+  left: 0px;
+  margin: auto 1em;
+  position: absolute;
 }
 
 .time, h4 {
