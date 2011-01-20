@@ -1,3 +1,9 @@
+
+body {
+  -webkit-transform:scale(.75);
+}
+
+
 body {
   background-color: #eee;
   font-family: "Baskerville";
@@ -29,7 +35,7 @@ header p, footer p {
   font-size: 0.7em;
 }
 
-#content {
+.page {
   background-color: #fff;
   margin: 1em auto;
   padding: 0 1.5em;
@@ -52,6 +58,7 @@ p, ul {
  
 section {
   line-height: 1.25em;
+  position: relative;
 }
 
 #interests ul {
