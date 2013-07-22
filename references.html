@@ -1,0 +1,75 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="screen.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <title>Amelia Kreminski</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      var onePixelSquareOfColor = function(color) {
+        var canvas = $('<canvas height="1" width="1"></canvas>');
+        var ctx = canvas[0].getContext("2d");
+        ctx.fillStyle = color;
+        ctx.fillRect(0,0,1,1);
+
+        return canvas[0].toDataURL();
+      }
+
+      $(function() {
+        var color = $('h3').css('background-color');
+        $('h3').each(function() {
+          var img  = $("<img/>").attr('src', onePixelSquareOfColor(color));
+          var span = $("<span></span>").text($(this).text());
+          $(this).append(img);
+          $(this).append(span);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <h1>Amelia Kreminski</h1>
+        <p>512.680.5227 &bull; <a href="mailto:ameliakreminsi@gmail.com">ameliakreminski@gmail.com</a> &bull; 368 Manhattan Ave, Apt. 3A, Brooklyn, NY 11211
+        <br/>
+      </header>
+
+      <section id="experience">
+        <h3>References</h3>
+
+        <h2>Taylor Antrim</h2>
+        <br/>
+        <h4>Senior Editor, <em>Vogue</em></h4>
+        <p style="font-size: 0.8em;">ltantrim@gmail.com</p>
+        <p style="font-size: 0.8em;">212.286.2757</p>
+
+        <h2>Patricia Callahan</h2>
+        <br/>
+        <h4>Copy Editor, Random House</h4>
+        <p style="font-size: 0.8em;">patricia.callahan@gmail.com</p>
+        <p style="font-size: 0.8em;">551.486.9066</p>
+
+        <h2>Stephen Blackwell</h2>
+        <br/>
+
+        <h4>Founder and Publisher, <em>Death and Taxes</em></h4>
+        <p style="font-size: 0.8em;">stephen@dt-mag.com</p>
+        <p style="font-size: 0.8em;">347.882.7619</p>
+
+        <h2>Andy Lefkowitz</h2>
+        <br/>
+
+        <h4>Managing Editor, TheaterMania.com</h4>
+        <p style="font-size: 0.8em;">andylefkowitz@gmail.com</p>
+      </section>
+
+      <br/>
+    </div>
+
+    <footer>
+      <p>512.680.5227 &bull; <a href="mailto:ameliakreminsi@gmail.com">ameliakreminski@gmail.com</a> &bull; 368 Manhattan Ave, Apt. 3A, Brooklyn, NY 11211
+    </footer>
+  </body>
+</html>
+
