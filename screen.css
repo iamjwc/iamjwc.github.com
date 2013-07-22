@@ -33,6 +33,7 @@ header p, footer p {
   background-color: #fff;
   margin: 1em auto;
   padding: 0 1.5em;
+  padding-bottom: 1em;
   border: 1px solid #bbb;
 
   width: 850px;
@@ -40,6 +41,9 @@ header p, footer p {
 
 p, ul {
   font-size: 0.8em;
+}
+ul ul {
+  font-size: 1.0em;
 }
 
 #education p {
@@ -54,14 +58,18 @@ section {
   line-height: 1.25em;
 }
 
-#interests ul {
+#interests ul, #skills ul {
   padding: 0;
   margin: 0;
   text-align: center;
 }
-#interests li:before {
+#interests li:before, #skills li:before {
 }
 #interests li {
+  width: 14.25%;
+  float: left;
+}
+#skills li {
   width: 25%;
   float: left;
 }
@@ -98,7 +106,7 @@ h3 span {
   position: absolute;
 }
 
-.time, h4 {
+.time, h4, .gpa {
   font-size: 0.8em;
   letter-spacing: 0.1em;
   line-height: 1em;
@@ -106,20 +114,20 @@ h3 span {
   margin-top: 0.75em;
   margin-bottom: 0;
 }
-.time span, h4 {
+.time span, h4, .gpa {
   text-transform: uppercase;
 }
 
 section#experience p {
   font-size: 0.75em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.65em;
+  margin-bottom: 0.65em;
 
   color: #666;
 }
 section#experience ul {
   margin-top: 0;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .location:before { content: "in "; }
@@ -129,7 +137,7 @@ section#experience ul {
   padding-left: 0.25em;
 }
 
-.time {
+.time, .gpa {
   float: right;
 }
 

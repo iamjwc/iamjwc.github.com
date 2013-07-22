@@ -5,3 +5,11 @@
   border-width: 0;
 }
 
+footer {
+  display: none;
+}
+
+#feedlyMiniIcon {
+  display: none !important;
+}
+
